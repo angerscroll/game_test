@@ -1,9 +1,8 @@
-export default class game {
-  constructor() {
-
+export default class Game {
+  constructor(params) {
+    this.row = params.row;
+    this.cell = params.cell;
+    this.matrix = params.matrix || new Array(this.row).fill(new Array(this.cell).fill(0));
   }
 
-   getHtml = async () =>{
-    console.log("hi i'm game");
-  }
 }

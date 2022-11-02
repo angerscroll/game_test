@@ -1,7 +1,13 @@
-import game from "./game/game.js";
+import Game from "./game/Game.js";
+import GameView from "./game/GameView.js";
+
+
 
 console.log('index.js')
 
-const gameStart  = new game();
+const row = 3;
+const cell =5;
+const matrix = 1111100000111110000011111;
 
-await gameStart.getHtml();
+const gameStart  = new Game({row,cell});
+let gameView = new GameView(document.getElementById("app"))
