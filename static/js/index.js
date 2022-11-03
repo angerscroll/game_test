@@ -10,4 +10,8 @@ const cell =5;
 const matrix = 1111100000111110000011111;
 
 const gameStart  = new Game({row,cell});
-let gameView = new GameView(document.getElementById("app"))
+let gameView = new GameView(document.getElementById("app"));
+
+gameView.onTileClick = i => {
+  console.log(`Tile clicked : ${i}`);
+}
